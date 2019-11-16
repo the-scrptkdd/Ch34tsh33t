@@ -45,6 +45,14 @@ print re.findall(r'(flag\{.+\})', source)[0]
 *OTHERS*
 
 *Forensics*
+strings filename | grep flag
+exiftool image | grep flag
+zsteg image
+file filename
+
+https://tcode2k16.github.io/blog/posts/picoctf-2019-writeup/forensics/
+
+
 
 *Bitflip*
 https://wannabyte.xyz/2018/10/picoctf-secure-logon/
