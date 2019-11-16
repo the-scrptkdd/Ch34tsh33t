@@ -2,6 +2,22 @@
 My CheatSheet
 
 
+*Always check the Http method needed. Below are the list of HTTP Methods*
+-POST
+-GET
+-PUT
+-PATCH
+-DELETE
+
+
+*Using Google as secret-agent*
+headers = {
+	'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
+}
+
+
+*If No Login was provided but Admin login is available*
+Try using cookie "admin" set it to "true"
 
 
 
