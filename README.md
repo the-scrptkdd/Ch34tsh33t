@@ -9,20 +9,17 @@ My CheatSheet
 -PATCH
 -DELETE
 
-
 *Using Google as secret-agent*
 headers = {
 	'User-Agent': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'
 }
 
-
 *If No Login was provided but Admin login is available*
 Try using cookie "admin" set it to "true"
 
-
-
-*SQL Injection"
+*SQL Injection*
 ' OR '1'='1' --
+' LIKE '%'; --
 
 
 
