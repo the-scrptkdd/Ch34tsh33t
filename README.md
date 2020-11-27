@@ -1,6 +1,11 @@
 # Ch34tsh33t
 My CheatSheet
 
+Check /etc/shadow file permission
+check /etc/passwd file permission
+check cron jobs
+Check sudo priv
+Check SUID/SGID Executables
 
 *Always check the Http method needed. Below are the list of HTTP Methods*
 -POST
